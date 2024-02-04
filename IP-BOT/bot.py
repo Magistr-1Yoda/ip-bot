@@ -2,11 +2,7 @@ import telebot
 import requests
 from environs import Env
 
-env = Env()
-env.read_env()
-token = env('TOKEN')
-
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot("6279309417:AAE88A0P3Pc8F-dw9BLiMYXqsj5pprTyP6w")
 
 def getinfo(ip: str) -> dict:
     url = f'https://ipinfo.io/{ip}/geo'
